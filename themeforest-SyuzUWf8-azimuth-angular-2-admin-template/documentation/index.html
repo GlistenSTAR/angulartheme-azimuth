@@ -1,0 +1,388 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Azimuth - Admin template based on Angular 11 and Bootstrap 4</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="ThemeSeason">
+	<meta name="copyright" content="ThemeSeason">
+	<meta name="date" content="2015-05-28T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/removeAdds.js"></script>
+
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{
+			background-image:url(assets/images/logo.png);
+			background-position: 20px 24px;
+			background-color: #1b222c;			
+		}
+		a{color:#0087ff;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA; margin-top: -40px;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#232b35;}
+		#documenter_sidebar ul a:hover{background:#232b35;color:#DDDDDD;border-top:1px solid #232b35;}
+		#documenter_sidebar ul a.current{background:#232b35;color:#DDDDDD;border-top:1px solid #232b35;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+		img{
+			-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5);
+			-moz-box-shadow: 0 0 20px rgba(0,0,0,0.5);
+			box-shadow: 0 0 20px rgba(0,0,0,0.5);
+		}
+		img.noshadow {
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+		code{
+			color: #ef2020;
+			background-color: #e5e5e6;
+			border: 1px solid #b9b9bb;
+			white-space: nowrap;
+			padding: 0 3px;
+			font-weight: bold;
+		}
+	</style>
+	
+</head>
+<body class="documenter-lale">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Intro</a></li>				
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#structure" title="Project Structure">Project Structure</a></li>	
+			<li><a href="#color" title="Color Scheme">Changing Skin Color</a></li>	
+            <li><a href="#page" title="Create New Page">Create New Page</a></li>				
+			
+			<li><a href="#support" title="Support and Feedback">Support and Feedback</a></li>
+			<li><a href="#conclusion" title="Conclusion">Conclusion</a></li>
+		</ul>
+		<div id="documenter_copyright">Copyright ThemeSeason 2016<br>		
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+		<h1>Azimuth</h1>
+		<h2>Admin template based on Angular 11 and Bootstrap 4</h2>
+		<div id="documenter_buttons">
+			
+		</div>
+		 <p>
+			<img alt="intro" src="assets/images/intro.jpg"></p>
+		<p>	
+		<hr>
+
+		<ul>
+			<li>created: 14/12/2016</li>
+			<li>latest update: 14/11/2020</li>
+			<li>by: ThemeSeason</li>	
+			<li>email: <a href="mailto: admin@themeseason.com">admin@themeseason.com</a></li>
+		</ul>
+       
+		<p>Hello everyone!</p>
+		<p>Thank you for purchasing my template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/theme_season">here</a>.  Thanks so much!</p>
+
+	</section>
+	
+	<section id="installation">
+		<div class="page-header"><h1>Installation</h1><hr class="notop"></div>
+		<h4>Prerequisites</h4>
+		<p>Although azimuth can be run without any development experience, it would be much easier if you already have some. The following instructions allow you to run a local copy on your machine.</p>
+		
+		<h4>Install tools</h4>
+		<p>If you have not yet installed <b>nodejs</b>, please Download and globally install nodejs : <a href="https://nodejs.org">https://nodejs.org</a></br> <strong>Note</strong>: download <i>Recommended For Most Users</i> version</p>
+		<p><a href="//docs.npmjs.com/getting-started/installing-node" target="_blank">A detailed instruction on how to install NodeJS is available here.</a></p>
+		<p>After installing NodeJS there is just one thing left to do: Simply install <strong>Typings</strong> globally by running the command <code>npm install -g typings</code> and wait for <i>npm</i> to do the dirty work.</p>		
+		<p><strong>Note</strong>: Make sure you have Node version &gt;= 9.0 and NPM &gt;=&nbsp;5 .  Also globally installed <b>typescript</b>.</p>
+		<p>Download and install <b>git</b> for your environment from this link: <a href="https://git-scm.com/download/" target="_blank"> https://git-scm.com/download/</a></p>
+		<p>Installing <b>Angular-CLI</b> globally is as simple as running this simple command: <code>npm install -g @angular/cli@latest</code></p>
+
+		<p>After the tools is installed, go inside of the template directory and install dependencies:</p>		
+		<p>Run <code>npm install</code> to install node dependencies defined in <b>package.json</b>.</p>
+
+        <h4>Running local copy</h4>	
+        <p>To run a local copy in development mode, execute <code>ng serve</code> and go to <a href="http://localhost:4200" target="blank">http://localhost:4200</a> in your browser.</p>
+        <p>To run the local copy in production mode and build the sources, execute <code>ng build --prod</code>. This will builds a production version of the application. All <b>html,css and js</b> code is minified and put to <b>dist</b> folder. The contents of this folder you can to put to your production server when publishing the application. </p>	
+			
+	</section>
+	
+	
+	<section id="structure">
+		<div class="page-header"><h1>Project Structure</h1><hr class="notop"></div>
+		<p>The directory structure of this template is as follows:</p>
+		
+<pre class="prettyprint">azimuth/ 
+├──src/                       * source files that will be compiled to javascript
+│   ├──typings.d.ts           * custom typings for third-party modules
+│   │
+│   ├──test.ts                * test
+│   │
+│   ├──styles.scss            * globally stylesheet
+│   │
+│   ├──index.html             * application layout
+│   │
+│   ├──main.ts                * entry file for our browser environment
+│   │
+│   ├──polyfills.ts           * polyfills file
+│   │
+│   ├──favicon.ico            * favicon 
+│   │
+│   ├──app/                   * application code - our working directory
+│   │   │
+│   │   ├──app.component.ts   * main application component
+│   │   │
+│   │   ├──app.module.ts      * main application module
+│   │   │
+│   │   ├──app.routing.ts     * application routes
+│   │   │  
+│   │   ├──app.state.ts       * application state for data exchange between components
+│   │   │
+│   │   ├──app.color.ts       * application colors functions
+│   │   │
+│   │   ├──app.config.ts      * application config parameters
+│   │   │
+│   │   ├──app.component.scss * application styles 
+│   │   │
+│   │   ├──pages/             * application pages components, place where you can create pages and fill them with components
+│   │   │
+│   │   └──theme/             * template global components/directives/pipes and styles
+│   │
+│   ├──environments/          * environments
+│   └──assets/                * static assets are served here
+│ 
+├──e2e/                       * will be used for end-to-end tests to ensure functionality for users before deploying
+├──angular.json               * used for configuration of project specific settings
+├──browserslist               * browserslist specify the browsers
+├──karma.conf                 * config file for karma testing framework
+├──package.json               * contains all dependencies used for production and development
+├──README.md                  * read me file
+├──tsconfig.app.json          * config app for typescript
+├──tsconfig.json              * config for typescript
+├──tsconfig.spec.json         * config spec for typescript
+└──tslint.json                * Angular-CLI includes an automatic Typescript-Linter, which can be configured with this file
+
+</pre>
+		
+		
+		<p>In our template we tried to separate the theme layer and presentation layer. We believe most of other templates have them combined. That’s why when you start developing using them, it gets very hard for you to remove things you don’t need.</p>
+		
+		
+	</section>
+	
+	
+	<section id="color">
+		<div class="page-header"><h1>Changing Skin Color</h1><hr class="notop"></div>
+		<p>We tried to make the process of skin color customization as easy as possible.</p>
+		<p>By default Azimuth has five built-in skin color: blue (default blue skin), green, red, black and purple.</p>
+		<p>
+			<img alt="skins" src="assets/images/skins.jpg"></p>
+		<p>	
+		<p>For change the skin color of theme do the following:</p>
+		<ol>
+			<li>Open <code>src\app\theme\styles\_variables.scss</code> file.</li>
+			<li>At the beginning of this file you find <code>@import "skins/blue";</code></li>
+			<li>Change this line with another skin color name, for example: <code>@import "skins/green";</code></li>
+		</ol>
+		<p>If you want to create your own skin color, please do the following:</p>
+		<ol>
+			<li>Create new skin color scss file in <code>src\app\theme\styles\skins</code> folder, for example: _maroon.scss</li>
+			<li>Copy content of <code>src\app\theme\styles\skins\_blue.scss</code> to <code>src\app\theme\styles\skins\_maroon.scss</code></li>
+			<li>After this you must change values of variables in _maroon.scss, then change the skin color of theme (how to change the skin color of theme? this was explained to little over the top)</li>
+		</ol>
+		<p>For enable background noise open <code>src\app\pages\pages.component.scss</code> file, then uncomment <code>@include theme-bg($body-bg-gradient-color-1, $body-bg-gradient-color-2);</code>, comment <code>background: $body-bg-color;</code> </p>
+		<p>
+			<img alt="noise-enabled" src="assets/images/noise-enabled.jpg"></p>
+		<p>	
+		<p>The result will be as follows:</p>
+		<img alt="noise" src="assets/images/noise.jpg"></p>
+	</section>
+	
+	<section id="page">
+		<div class="page-header"><h1>Create New Page</h1><hr class="notop"></div>
+		<p>Azimuth uses <a href="https://angular.io/docs/ts/latest/guide/router.html">Angular Component Router</a> for navigation.</p>
+		<p>To generate our first <b>component</b> we simply open up a terminal and navigate in our app. Now we simply run <code>ng g component client</code> and we get a new component in <b>/src/app/client</b> with the following files:</p>
+		<ul>
+			<li><i>client.component.ts</i></li>
+			<li><i>client.component.html</i></li>
+			<li><i>client.component.css</i></li>
+			<li><i>client.component.spec.ts</i></li>
+		</ul>
+		<p>The files <i>client.component.ts</i> and <i>client.component.spec.ts</i> contain the most code, the other files only contain placeholders.</p>
+		<p>By executing this short command, we just saved ourselves a lot of time creating all these <b>Component</b> files and boilerplate code. <a href="https://github.com/angular/angular-cli#generating-components-directives-pipes-and-services" target="_blank">Syntax for all commands are available here.</a></p>
+
+		<p>To create a new page without angular-cli, do the following:</p>
+		<ol>
+			<li>Create a new folder for our new page inside of <code>src/app/pages</code>. We can call the folder <code>new</code>. </li>
+			<li>Then let’s create a blank Angular component for our page called <b>new.component.ts</b> inside of <code>src/app/pages/new</code>:						
+<pre class="prettyprint linenums">
+import {Component} from '@angular/core';
+
+@Component({
+  selector: 'new',
+  template: `<strong>My page content here</strong>`
+})
+export class NewComponent {
+  constructor() {}
+}
+</pre>
+				This will create a simple Angular component. For more detail please check out <a href="https://angular.io/docs/ts/latest/guide/displaying-data.html">official Angular documentation</a>.
+			</li>
+			<li>Then open <code>src/app/pages/pages.module.ts</code> file and import <b>new.component.ts</b> in it
+<pre class="prettyprint">
+import { NewComponent } from './new/new.component';
+</pre>
+				and declare it:	
+<pre class="prettyprint">
+@NgModule({
+  imports: [
+    ......
+  ],
+  declarations: [
+    ......,
+    NewComponent,
+    ......
+  ]
+})
+</pre>
+			</li>
+			<li>After that open <code>src/app/pages/pages.routing.ts</code> file and import <b>new.component.ts</b> in it
+<pre class="prettyprint">
+import { NewComponent } from './new/new.component';
+</pre>
+				and create routing for this page:
+<pre class="prettyprint">
+export const routes: Routes = [ 
+    {
+        path: '', 
+        component: PagesComponent,
+        children:[
+            .....
+            { path: 'new', component: NewComponent, data: { breadcrumb: 'New page' } }
+            .....
+        ]
+    }
+];
+</pre>
+			</li>
+			<li>The final thing we need to do is to declare a route in <code>src/app/theme/components/menu/menu.ts</code>.
+<pre class="prettyprint">
+export const menuItems = [
+  ......,
+  {
+    title: 'New Page',
+    routerLink: 'new',
+    icon: 'new-page-icon',
+    selected: false,
+    expanded: false,
+    order: 100
+  }, 
+  ......
+];
+</pre>
+				And that’s it! Now your page is available by the following this url <a href="http://localhost:4200/pages/new" target="_blank">http://localhost:4200/pages/new</a>.
+				Plus, your page is registered inside the sidebar menu. If you don’t want to have a link in the menu, just remove the menu declaration from the <code>src/app/theme/components/menu/menu.ts</code> file.
+
+
+			</li>
+		</ol>
+<p>To allow for the URL to automatically route to the appropriate component on an Apache server like the internal <code>ng serve</code> server, you need to create a <b>.htaccess</b> file that routes all requests to the <code>index.html</code> file. Here is an example how we did it on our demo-page:</p>
+<pre lang="htaccess">&lt;IfModule mod_rewrite.c&gt;
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+&lt;/IfModule&gt;
+</pre>
+
+	</section>
+	
+	
+
+
+	
+
+
+	<section id="support">
+		<div class="page-header"><h3>Support and Feedback</h3><hr class="notop"></div>
+		<p>All questions you can send via the contact form <a href="https://themeforest.net/user/theme_season#contact" target="_blank"><b>HERE</b></a>.</p>
+		<p>I answer all questions every day from <b>Monday to Friday from 8:00 to 18:00 (GMT+4)</b> within 24-48h in the order they were received.</p>
+		<p>Please do not panic if I do not answer too long – <b>I love my buyers and I’ll answer for all questions ;)</b></p>
+
+		<h4>Support for my items includes:</h4>
+		<ul>
+			<li>Answering questions about how to use the item.</li>
+			<li>Answering technical questions about the item (and included third party assets).</li>
+			<li>Help with defects in the item or included third party assets.</li>
+			<li>Item updates to ensure ongoing compatibility and to resolve security vulnerabilities.</li>
+		</ul>
+		<h4>Item support does not include:</h4>
+		<ul>
+			<li>Installation of the item.</li>
+			<li>Hosting, server environment, or software.</li>
+			<li>Support for third party plug-ins.</li>
+			<li>Plugins integration.</li>		
+			<li>Support for issues caused by user modifications in the theme’s code, styling and general functionality.</li>
+		</ul>		
+		<p>More information about the terms of support you can see here: <a href="https://themeforest.net/page/item_support_policy" target="_blank" class="alert-link">https://themeforest.net/page/item_support_policy</a></p>
+	</section>
+
+	<section id="conclusion">
+		<div class="page-header"><h3>Conclusion</h3><hr class="notop"></div>		
+
+		<h1>Thank you for your purchase!</h1>
+		<p>Thanks for reading the Instruction, hope it’s been really helpful and resolved most of your concerns. </p>
+		<hr class="notop">
+
+		<h2>Don’t forget to rate <img src="assets/images/stars.png" alt="" class="noshadow"> if you enjoy the product! It is very important for us to have certain goal.</h2>
+	</section>
+
+	</div>
+</body>
+</html>
